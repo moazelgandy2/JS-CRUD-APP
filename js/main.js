@@ -41,6 +41,11 @@ function areAllInputsValid() {
     productDesc.classList.contains("is-valid")
   );
 }
+function reset() {
+  productName.value = "";
+  productPrice.value = "";
+  productDesc.value = "";
+}
 
 function store() {
   if (areAllInputsValid()) {
@@ -57,6 +62,7 @@ function store() {
     table.innerHTML = products;
 
     localStorage.setItem("products", products);
+    reset();
   } else {
     window.alert("Please fill in all fields correctly.");
   }
