@@ -48,6 +48,8 @@ function store() {
       <td>${productName.value}</td>
       <td>${productPrice.value}</td>
       <td>${productDesc.value}</td>
+      <td><button class='btn btn-sm btn-danger'>Delete</button></td>
+      <td><button class='btn btn-sm btn-info'>Update</button></td>
     </tr>`;
 
     products += product;
