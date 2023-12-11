@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="container py-2">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h1>CRUD Application</h1>
+        </div>
+      </div>
+      <div class="row w-75 mx-auto mb-1">
+        <div class="col-12">
+          <form onsubmit="store();return false">
+            <div class="input-group mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="productName"
+                placeholder="Product name"
+                required
+              />
+            </div>
+            <div class="input-group mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="productPrice"
+                placeholder="Product price"
+                required
+              />
+            </div>
+            <div class="input-group mb-2">
+              <textarea
+                class="form-control"
+                name=""
+                id="productDesc"
+                rows="8"
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Products</h1>
+          <table class="table table-light">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody class="table-secondary" id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
