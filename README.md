@@ -22,6 +22,10 @@ The following technologies were used to create this CRUD app:
 - Read: The app displays the list of products stored in the LocalStorage in a table format.
 - Update: Users can update product details by editing the existing product entries.
 - Delete: Users can remove products from the list.
+- Live Input Validation: Real-time input validation is implemented using event listeners in JavaScript to provide immediate feedback on input field validity.
+  - Product Name: Validates for a minimum length of 3 characters.
+  - Product Price: Validates for a minimum length of 1 character (can be adjusted as needed).
+  - Product Description: Validates for a minimum length of 5 characters.
 
 ## Usage
 
